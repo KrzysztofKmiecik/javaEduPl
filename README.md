@@ -1,0 +1,1 @@
+https://java.edu.pl/java/newJava8/1.lambda.php
