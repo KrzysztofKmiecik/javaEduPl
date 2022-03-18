@@ -30,7 +30,7 @@ public class Main {
         ///////////
         Stream.of(Arrays.asList(1, 2), Arrays.asList(3, 4))
                 .map(List::stream)
-                .forEach( n -> System.out.println(n));
+                .forEach(n -> System.out.println(n));
 
         Stream.of(Arrays.asList(1, 2), Arrays.asList(3, 4))
                 .flatMap(List::stream)
@@ -41,9 +41,16 @@ public class Main {
         System.out.println("imiona");
         System.out.print(Stream.of("Mateusz", "Michal", "Magdalena", "Basia", "Natalia")
                 .flatMap(name -> IntStream.range(0, name.length())
-                        .mapToObj(name::charAt))
+                        .mapToObj(index -> name.charAt(index)))
                 .filter(ch -> ch == 'a' || ch == 'A')
                 .count()
         );  // wypisana zostanie liczba 10
+
+        Stream<String> stringStream = Stream.of("Mateusz", "Michal", "Magdalena", "Basia", "Natalia");
+        Stream<Character> characterStream = stringStream.flatMap(name -> IntStream.range(0, name.length())
+                .mapToObj(name::charAt));
+
+        Stream<Character> filteredCharacterStream = characterStream.filter(ch -> ch == 'a' || ch == 'A');
+
     }
 }
