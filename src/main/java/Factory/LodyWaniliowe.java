@@ -1,12 +1,12 @@
 package Factory;
 
-public class LodyCzekoladowe implements Lody {
+public class LodyWaniliowe implements Lody {
     String nazwa;
     double price;
     int kalorie;
 
-    public LodyCzekoladowe(double price, int kalorie) {
-        this.nazwa="Czekoladowe";
+    public LodyWaniliowe(double price, int kalorie) {
+        this.nazwa="Waniliowe";
         this.price = price;
         this.kalorie = kalorie;
     }
@@ -28,7 +28,7 @@ public class LodyCzekoladowe implements Lody {
 
     @Override
     public String toString() {
-        return "LodyCzekoladowe{" +
+        return "LodyWaniliowe{" +
                 "nazwa='" + nazwa + '\'' +
                 ", price=" + price +
                 ", kalorie=" + kalorie +

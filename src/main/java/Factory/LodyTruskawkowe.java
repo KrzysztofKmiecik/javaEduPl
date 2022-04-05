@@ -25,4 +25,13 @@ public class LodyTruskawkowe implements Lody {
     public int getKalorie() {
         return kalorie;
     }
+
+    @Override
+    public String toString() {
+        return "LodyTruskawkowe{" +
+                "nazwa='" + nazwa + '\'' +
+                ", price=" + price +
+                ", kalorie=" + kalorie +
+                '}';
+    }
 }
