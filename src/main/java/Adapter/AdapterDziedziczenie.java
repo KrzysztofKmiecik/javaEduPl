@@ -1,4 +1,4 @@
-package Dekorator.Adapter;
+package Adapter;
 
 public class AdapterDziedziczenie extends Adoptowana implements WymaganyInterfejs{
     @Override
