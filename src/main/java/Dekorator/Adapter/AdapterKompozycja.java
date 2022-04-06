@@ -1,4 +1,4 @@
-package Adapter;
+package Dekorator.Adapter;
 
 public class AdapterKompozycja implements WymaganyInterfejs{
 

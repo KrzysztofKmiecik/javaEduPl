@@ -1,4 +1,4 @@
-package Adapter;
+package Dekorator.Adapter;
 
 public class Adoptowana {
     public String stareZadanie(){
